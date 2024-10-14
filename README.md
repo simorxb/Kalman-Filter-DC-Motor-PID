@@ -28,13 +28,13 @@ The Kalman Filter is employed to estimate the angular velocity of a DC motor bas
 - **State Equation:**
   $$x_k = F x_{k-1} + B u_k + w_k$$
   Where:
-  - $x_k$ = [θ; ω] (θ = angular position, ω = angular velocity)
-  - $$F = \begin{bmatrix} 1 & \Delta t \\ 0 & 1 \end{bmatrix}$$ is the state transition matrix.
-  - $$w_k$$ is process noise.
+  - $x_k$ = $[\theta$; $\omega]$ ($\theta$ = angular position, $\omega$ = angular velocity)
+  - $$F = [ 1, \Delta t ; 0, 1]$$ is the state transition matrix.
+  - $w_k$ is process noise.
 
 - **Measurement Equation:**
-  $$ z_k = H x_k + v_k $$
-  Where $H = \begin{bmatrix} 1 & 0 \end{bmatrix}$, $v_k$ is measurement noise.
+  $$z_k = H x_k + v_k$$
+  where $H = [ 1, 0]$, $v_k$ is measurement noise.
 
 ### PID Control Process
 - The Kalman Filter provides the estimated angular velocity as input to the PID controller.
