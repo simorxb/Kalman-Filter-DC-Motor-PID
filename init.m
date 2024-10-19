@@ -9,10 +9,10 @@ R = 0.6;            % Armature resistance (Ohm)
 L = 0.35/1000;      % Armature inductance (H)
 ke = 0.0191;        % Back EMF constant (V*s/rad)
 
-% PID init params
+%% PID init params
 
-kp = 0.02;             % Proportional gain
-ki = 0.08;           % Integral gain
+kp = 0.02;          % Proportional gain
+ki = 0.08;          % Integral gain
 v_max = 12;         % Max voltage
 
 %% Kalman Filter
